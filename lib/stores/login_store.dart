@@ -61,4 +61,11 @@ abstract class _LoginStore with Store {
     loggedIn = true;
   }
 
+  @action
+  void logout() {
+    loggedIn = false;
+    email = '';
+    password = '';
+  }
+
 }
